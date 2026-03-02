@@ -38,9 +38,6 @@ class ShipmentMethodPriceDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsShipmentMethodPrices(): void
     {
         //Arrange

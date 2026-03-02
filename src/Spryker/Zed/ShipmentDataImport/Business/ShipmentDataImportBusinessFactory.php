@@ -78,65 +78,41 @@ class ShipmentDataImportBusinessFactory extends DataImportBusinessFactory
         return $dataImporter;
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createShipmentMethodPriceWriterStep(): DataImportStepInterface
     {
         return new ShipmentMethodPriceWriterStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createCurrencyCodeToIdCurrencyStep(): DataImportStepInterface
     {
         return new CurrencyCodeToIdCurrencyStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createTaxSetNameToIdTaxSetStep(): DataImportStepInterface
     {
         return new TaxSetNameToIdTaxSetStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createShipmentCarrierWriterStep(): DataImportStepInterface
     {
         return new ShipmentCarrierWriterStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createShipmentMethodWriterStep(): DataImportStepInterface
     {
         return new ShipmentMethodWriterStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createStoreNameToIdStoreStep(): DataImportStepInterface
     {
         return new StoreNameToIdStoreStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createShipmentMethodKeyToIdShipmentMethodStep(): DataImportStepInterface
     {
         return new ShipmentMethodKeyToIdShipmentMethodStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createShipmentMethodStoreWriterStep(): DataImportStepInterface
     {
         return new ShipmentMethodStoreWriterStep();

@@ -63,9 +63,6 @@ class ShipmentDataImportConfig extends DataImportConfig
         return $this->buildImporterConfiguration($moduleDataImportDirectory . 'shipment_price.csv', static::IMPORT_TYPE_SHIPMENT_PRICE);
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleRoot(): string
     {
         $moduleRoot = realpath(

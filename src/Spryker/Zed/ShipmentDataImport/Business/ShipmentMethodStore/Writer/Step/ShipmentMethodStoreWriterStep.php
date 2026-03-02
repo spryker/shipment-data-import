@@ -22,11 +22,6 @@ class ShipmentMethodStoreWriterStep extends PublishAwareStep implements DataImpo
      */
     protected const SHIPMENT_METHOD_PUBLISH = 'Shipment.shipment_method.publish';
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $shipmentMethodStoreEntity = SpyShipmentMethodStoreQuery::create()

@@ -31,17 +31,11 @@ class ShipmentDataImportCommunicationTester extends Actor
 {
     use _generated\ShipmentDataImportCommunicationTesterActions;
 
-    /**
-     * @return void
-     */
     public function ensureShipmentMethodStoreTableIsEmpty(): void
     {
         SpyShipmentMethodStoreQuery::create()->deleteAll();
     }
 
-    /**
-     * @return void
-     */
     public function ensureShipmentMethodTableIsEmpty(): void
     {
         $this->ensureShipmentMethodPriceTableIsEmpty();
@@ -49,17 +43,11 @@ class ShipmentDataImportCommunicationTester extends Actor
         SpyShipmentMethodQuery::create()->deleteAll();
     }
 
-    /**
-     * @return void
-     */
     public function ensureShipmentMethodPriceTableIsEmpty(): void
     {
         SpyShipmentMethodPriceQuery::create()->deleteAll();
     }
 
-    /**
-     * @return void
-     */
     public function ensureShipmentCarrierTableIsEmpty(): void
     {
         SpyShipmentCarrierQuery::create()->deleteAll();

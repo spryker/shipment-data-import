@@ -14,11 +14,6 @@ use Spryker\Zed\ShipmentDataImport\Business\ShipmentMethodPrice\Writer\DataSet\S
 
 class ShipmentMethodPriceWriterStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $shipmentMethodPriceEntity = SpyShipmentMethodPriceQuery::create()

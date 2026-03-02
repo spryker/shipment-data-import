@@ -35,9 +35,6 @@ class ShipmentDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsShipment(): void
     {
         //Arrange
