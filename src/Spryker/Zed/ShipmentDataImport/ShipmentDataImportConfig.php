@@ -13,16 +13,22 @@ use Spryker\Zed\DataImport\DataImportConfig;
 class ShipmentDataImportConfig extends DataImportConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_SHIPMENT_METHOD_STORE = 'shipment-method-store';
 
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_SHIPMENT = 'shipment';
 
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_SHIPMENT_PRICE = 'shipment-price';
